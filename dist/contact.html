@@ -18,13 +18,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <!-- End - Fonts -->
 </head>
 
 <body
   class="dark:bg-black bg-white h-screen text-black dark:text-white px-5 md:px-20 opacity-0 animate-fade-in transition duration-500">
   <!-- Navbar -->
-  <header class="flex w-full overflow-hidden pt-10 pb-1">
+  <header class="flex w-full overflow-hidden py-6 bg-gray-800 text-white">
     <nav id="nav" x-data="{ open: false }" role="navigation" class="w-full">
       <div class="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
         <div class="mr-4 md:mr-8">
@@ -32,8 +34,7 @@
         </div>
         <div class="ml-auto md:hidden flex items-center justify-start">
           <button onclick="menuToggle()" @click="open = !open"
-            class="tap-highlight-transparent text-black dark:text-white w-5 h-5 relative focus:outline-none"
-            @click="open = !open">
+            class="tap-highlight-transparent text-white w-5 h-5 relative focus:outline-none">
             <span class="sr-only">Open main menu</span>
             <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <span aria-hidden="true"
@@ -55,18 +56,19 @@
             <li class="group transition duration-300">
               <a href="../index.html" class="font-signika text-2xl">PORTFOLIO
                 <span
-                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
               </a>
             </li>
             <li class="group transition duration-300">
               <a href="about_me.html" class="font-signika text-2xl">ABOUT ME
                 <span
-                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
               </a>
             </li>
             <li class="group transition duration-300">
               <a href="contact.html" class="font-signika text-2xl">CONTACT
-                <span class="hidden md:block h-0.5 bg-black dark:bg-white"></span>
+                <span
+                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
               </a>
             </li>
           </ul>
@@ -77,41 +79,44 @@
   <!-- Content -->
   <div class="container mx-auto">
     <div class="grid grid-cols-2 gap-16">
+      <!-- Contact Information Section -->
       <section class="col-span-2 md:col-span-1">
-        <div class="max-w-screen-md">
+        <div class="max-w-screen-md p-8 bg-white dark:bg-neutral-900 rounded-lg shadow-lg">
           <h1 class="text-4xl pt-10 pb-8"><b>CONTACT</b></h1>
           <p class="text-xl mb-6">Feel free to reach out through any of the platforms below!</p>
           <div class="space-y-4">
-            <a href="mailto:denche@et.intechinfo.fr" class="block w-full py-3 px-5 text-white bg-black rounded-md hover:bg-gray-800 transition text-lg">
-              📧 Email: denche@et.intechinfo.fr
+            <a href="mailto:denche@et.intechinfo.fr"
+              class="block w-full py-3 px-5 text-white bg-blue-600 rounded-full shadow-lg hover:bg-blue-700 hover:shadow-xl transition text-lg">
+              <i class="fas fa-envelope"></i> Email: denche@et.intechinfo.fr
             </a>
             <a href="https://www.linkedin.com/in/aimen-denche/" target="_blank" rel="noreferrer"
-              class="block w-full py-3 px-5 text-white bg-blue-600 rounded-md hover:bg-blue-700 transition text-lg">
-              🔗 LinkedIn: Aimen Denche
+              class="block w-full py-3 px-5 text-white bg-blue-800 rounded-full shadow-lg hover:bg-blue-900 hover:shadow-xl transition text-lg">
+              <i class="fab fa-linkedin"></i> LinkedIn: Aimen Denche
             </a>
             <a href="https://www.instagram.com/aimendenche/" target="_blank" rel="noreferrer"
-              class="block w-full py-3 px-5 text-white bg-pink-600 rounded-md hover:bg-pink-700 transition text-lg">
-              📸 Instagram: @aimendenche
+              class="block w-full py-3 px-5 text-white bg-pink-500 rounded-full shadow-lg hover:bg-pink-600 hover:shadow-xl transition text-lg">
+              <i class="fab fa-instagram"></i> Instagram: @aimendenche
             </a>
           </div>
         </div>
       </section>
+      <!-- Image Section -->
       <div class="col-span-2 md:col-span-1 flex relative">
         <div
           class="bg-white dark:bg-neutral-900 p-5 pb-20 m-6 md:m-12 shadow-lg border border-gray-100 dark:border-neutral-800 hover:rotate-0 transition duration-500 rotate-6 relative">
-          <img
-            src="./assets/madeira.png"
-            alt="Aimen Denche" class="flex flex-col aspect-square w-full object-cover h-auto max-h-full" />
+          <img src="./assets/madeira.png" alt="Aimen Denche"
+            class="rounded-lg shadow-lg flex flex-col aspect-square w-full object-cover h-auto max-h-full" />
         </div>
       </div>
     </div>
   </div>
+
   <!-- Footer -->
   <footer>
     <div class="max-w-screen-xl py-16 mx-auto">
       <div class="grid grid-cols-1 gap-8 text-center mx-auto">
         <div>
-          <p class="font-signika"><b>Aimen DENCHE</b></p>
+          <p class="font-signika"><b>AIMEN DENCHE</b></p>
           <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">
             Paris, Île-de-France<br />+33 6 19 78 57 89
           </p>
@@ -122,8 +127,6 @@
       © 2024 Developed and Designed by Aimen Denche
     </p>
   </footer>
-  <script src="fade_in.js"></script>
-  <script src="menu.js"></script>
 </body>
 
 </html>
