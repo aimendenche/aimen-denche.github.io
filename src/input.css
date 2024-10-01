@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
+  /* Utility classes for responsive design and interactions */
   .tap-highlight-transparent {
     -webkit-tap-highlight-color: transparent;
   }
@@ -17,6 +18,7 @@
     display: inline-block;
   }
 
+  /* Adding keyframes for subtle animations */
   @keyframes wave {
     0%, 60%, 100% { transform: rotate(0deg); }
     10%, 30% { transform: rotate(14deg); }
@@ -24,6 +26,17 @@
     50% { transform: rotate(10deg); }
   }
 
+  /* Adding animations for hover and fade-in effects */
+  .animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+  }
+
+  @keyframes fade-in {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Improving text styles for readability and style */
   .text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -33,38 +46,47 @@
     font-weight: 700;
   }
 
-  a {
-    transition: color 0.3s ease;
+  .font-nothingyoucoulddo {
+    font-family: 'Nothing You Could Do', cursive;
   }
 
+  .font-signika {
+    font-family: 'Signika', sans-serif;
+  }
+
+  /* Enhancing anchor hover effect */
   a:hover {
-    color: #00BFFF; /* Adjust hover color as needed */
+    color: #00BFFF;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.05);
   }
 
-  .rounded-image {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  /* Beautifying button styles */
+  .btn {
+    @apply text-white bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded transition-all duration-300 ease-in-out;
   }
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  /* Improving image hover with scaling and shadow */
+  .img-hover-scale {
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
   }
 
-  .footer {
-    background-color: #1f2937; /* Dark background for contrast */
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+  .img-hover-scale:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   }
 
-  .footer a {
-    color: #00BFFF; /* Footer link color */
+  /* Making sure containers adjust for responsiveness */
+  .responsive-container {
+    @apply w-full mx-auto p-4 md:p-8;
   }
 
-  .footer a:hover {
-    color: #87CEFA; /* Lighter hover color for footer links */
+  /* Flex and grid adjustments for responsiveness */
+  .flex-responsive {
+    @apply flex flex-col md:flex-row md:space-x-4;
+  }
+
+  .grid-responsive {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4;
   }
 }
