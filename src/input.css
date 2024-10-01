@@ -23,4 +23,48 @@
     20%, 40% { transform: rotate(-8deg); }
     50% { transform: rotate(10deg); }
   }
+
+  .text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .font-bold {
+    font-weight: 700;
+  }
+
+  a {
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: #00BFFF; /* Adjust hover color as needed */
+  }
+
+  .rounded-image {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .footer {
+    background-color: #1f2937; /* Dark background for contrast */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  .footer a {
+    color: #00BFFF; /* Footer link color */
+  }
+
+  .footer a:hover {
+    color: #87CEFA; /* Lighter hover color for footer links */
+  }
 }
