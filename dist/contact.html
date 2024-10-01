@@ -40,10 +40,10 @@
                 class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
                 :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
               <span aria-hidden="true"
-                class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out"
-                :class="{'opacity-0': open } "></span>
+                class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                :class="{'opacity-0': open }"></span>
               <span aria-hidden="true"
-                class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
+                class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
                 :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
             </div>
           </button>
@@ -81,28 +81,19 @@
         <div class="max-w-screen-md">
           <h1 class="text-4xl pt-10 pb-8"><b>CONTACT</b></h1>
           <p class="text-xl mb-6">Feel free to reach out through any of the platforms below!</p>
-          <ul class="space-y-4">
-            <li class="text-lg">
-              <strong>Email:</strong>
-              <a href="mailto:denche@et.intechinfo.fr" class="underline hover:text-blue-500">
-                denche@et.intechinfo.fr
-              </a>
-            </li>
-            <li class="text-lg">
-              <strong>LinkedIn:</strong>
-              <a href="https://www.linkedin.com/in/aimen-denche/" target="_blank" rel="noreferrer"
-                class="underline hover:text-blue-500">
-                Aimen Denche on LinkedIn
-              </a>
-            </li>
-            <li class="text-lg">
-              <strong>Instagram:</strong>
-              <a href="https://www.instagram.com/aimendenche/" target="_blank" rel="noreferrer"
-                class="underline hover:text-blue-500">
-                @aimendenche
-              </a>
-            </li>
-          </ul>
+          <div class="space-y-4">
+            <a href="mailto:denche@et.intechinfo.fr" class="block w-full py-3 px-5 text-white bg-black rounded-md hover:bg-gray-800 transition text-lg">
+              📧 Email: denche@et.intechinfo.fr
+            </a>
+            <a href="https://www.linkedin.com/in/aimen-denche/" target="_blank" rel="noreferrer"
+              class="block w-full py-3 px-5 text-white bg-blue-600 rounded-md hover:bg-blue-700 transition text-lg">
+              🔗 LinkedIn: Aimen Denche
+            </a>
+            <a href="https://www.instagram.com/aimendenche/" target="_blank" rel="noreferrer"
+              class="block w-full py-3 px-5 text-white bg-pink-600 rounded-md hover:bg-pink-700 transition text-lg">
+              📸 Instagram: @aimendenche
+            </a>
+          </div>
         </div>
       </section>
       <div class="col-span-2 md:col-span-1 flex relative">
