@@ -9,7 +9,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/aimendenche/aimen-denche.github.io">
-    <img src="dist/assets/Logo.jpg" alt="Logo" width="80" height="80">
+    <img src="dist/assets/ad.jpg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Aimen Denche - Portfolio</h3>

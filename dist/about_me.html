@@ -1,55 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aimen DENCHE - About Me</title>
-  <link rel="stylesheet" href="output.css" />
+  <title>Aimen Denche - About Me</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- Alpine.js for smooth animations -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="dark:bg-black bg-white text-black dark:text-white px-5 md:px-20 opacity-0 animate-fade-in transition duration-500">
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition duration-500">
   <!-- Navbar -->
-  <header class="flex justify-between items-center py-4 bg-gray-800 text-white">
-    <h1 class="text-2xl font-bold">Aimen DENCHE</h1>
-    <nav class="space-x-4">
-      <a href="../index.html" class="hover:text-gray-400">PORTFOLIO</a>
-      <a href="about_me.html" class="hover:text-gray-400">ABOUT ME</a>
-      <a href="contact.html" class="hover:text-gray-400">CONTACT</a>
+  <header class="w-full bg-gray-800 p-5 shadow-lg">
+    <nav class="container mx-auto flex items-center justify-between">
+      <a href="../index.html" class="text-3xl font-bold text-white">Aimen DENCHE</a>
+      <ul class="flex space-x-6">
+        <li><a href="../index.html" class="text-white hover:text-gray-300">PORTFOLIO</a></li>
+        <li><a href="about_me.html" class="text-white hover:text-gray-300">ABOUT ME</a></li>
+        <li><a href="contact.html" class="text-white hover:text-gray-300">CONTACT</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Content -->
-  <div class="container mx-auto my-10 p-5">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <!-- Image Section -->
-      <div class="flex justify-center">
-        <img src="./assets/me.png" alt="Aimen Denche"
-          class="rounded-lg shadow-lg object-cover w-full md:w-2/3 lg:w-1/2"/>
-      </div>
-
-      <!-- Text Section -->
-      <div>
-        <h2 class="text-4xl font-bold mb-4">Hello there, I'm Aimen 👋</h2>
-        <p class="text-lg mb-4">
-          I'm Aimen Denche, a visual creator and tech enthusiast based in France. With a love for exploring the world and capturing the essence of my travels, I blend technology and creativity to tell visual stories.
-        </p>
-        <p class="text-lg mb-4">
-          When I'm not behind the lens or developing data engineering projects, you'll find me exploring new destinations, diving into different cultures, or experimenting with photography techniques.
-        </p>
-        <p class="text-lg">
-          Thank you for taking the time to explore my journey. Let's create something meaningful together!
-        </p>
-      </div>
+  <!-- Main Content -->
+  <main class="container mx-auto mt-12 p-5 text-center">
+    <h1 class="text-5xl font-bold mb-6 animate-bounce">Hello, I'm Aimen 👋</h1>
+    <p class="text-lg mb-8">A visual creator & tech enthusiast based in France, blending technology & creativity to capture the world’s essence through photography and videography.</p>
+    <div class="flex justify-center">
+      <img src="./assets/me.png" alt="Aimen Denche" class="rounded-lg shadow-xl w-80 md:w-96">
     </div>
-  </div>
+    <section class="mt-12">
+      <p class="text-xl leading-relaxed max-w-xl mx-auto">
+        I explore the world through my lens, capturing the beauty of landscapes, cultures, and people. When I'm not traveling, you'll find me developing data engineering projects or experimenting with new photography techniques. Let's connect and create something extraordinary!
+      </p>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-6">
-    <p class="font-bold">Aimen DENCHE</p>
-    <p>Paris, Île-de-France<br>+33 6 19 78 57 89</p>
-    <p class="mt-4 text-sm">© 2024 Developed and Designed by Aimen Denche</p>
+  <footer class="bg-gray-800 p-5 mt-12">
+    <div class="container mx-auto text-center text-white">
+      <p>Aimen DENCHE - Paris, Île-de-France</p>
+      <p>+33 6 19 78 57 89</p>
+      <p>© 2024 Developed and Designed by Aimen Denche</p>
+    </div>
   </footer>
 </body>
+
 </html>
