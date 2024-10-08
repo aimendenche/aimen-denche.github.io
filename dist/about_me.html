@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aimen Denche - About Me</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Alpine.js for smooth animations -->
+  <link rel="stylesheet" href="output.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition duration-500">
+<body class="bg-animated dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition duration-500">
   <!-- Navbar -->
   <header class="w-full bg-gray-800 p-5 shadow-lg">
     <nav class="container mx-auto flex items-center justify-between">
@@ -26,14 +22,14 @@
   </header>
 
   <!-- Main Content -->
-  <main class="container mx-auto mt-12 p-5 text-center">
+  <main class="container mx-auto mt-12 p-5 text-center max-w-screen-md">
     <h1 class="text-5xl font-bold mb-6 animate-bounce">Hello, I'm Aimen 👋</h1>
-    <p class="text-lg mb-8">A visual creator & tech enthusiast based in France, blending technology & creativity to capture the world’s essence through photography and videography.</p>
+    <p class="text-lg mb-8 max-w-lg mx-auto animate-slide-up">A visual creator & tech enthusiast based in France, blending technology & creativity to capture the world’s essence through photography and videography.</p>
     <div class="flex justify-center">
-      <img src="./assets/me.png" alt="Aimen Denche" class="rounded-lg shadow-xl w-80 md:w-96">
+      <img src="./assets/me.png" alt="Aimen Denche" class="rounded-lg shadow-xl w-80 md:w-96 profile-img glow-btn">
     </div>
     <section class="mt-12">
-      <p class="text-xl leading-relaxed max-w-xl mx-auto">
+      <p class="text-xl leading-relaxed max-w-xl mx-auto animate-slide-up">
         I explore the world through my lens, capturing the beauty of landscapes, cultures, and people. When I'm not traveling, you'll find me developing data engineering projects or experimenting with new photography techniques. Let's connect and create something extraordinary!
       </p>
     </section>
@@ -48,5 +44,4 @@
     </div>
   </footer>
 </body>
-
 </html>
