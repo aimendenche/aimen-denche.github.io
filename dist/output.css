@@ -608,107 +608,6 @@ a:hover {
 
 /* Flex and grid adjustments for responsiveness */
 
-.contact-btn {
-  border-radius: 0.25rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  transition-property: all;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  font-weight: 700;
-}
-
-.contact-btn-email {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
-}
-
-.contact-btn-email:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
-}
-
-.contact-btn-linkedin {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
-.contact-btn-linkedin:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
-.contact-btn-instagram {
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
-}
-
-.contact-btn-instagram:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 39 119 / var(--tw-bg-opacity));
-}
-
-.flex-responsive {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 768px) {
-  .flex-responsive {
-    flex-direction: row;
-  }
-
-  .flex-responsive > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1rem * var(--tw-space-x-reverse));
-    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-}
-
-.grid-responsive {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-@media (min-width: 768px) {
-  .grid-responsive {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-.section-padding {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-@media (min-width: 768px) {
-  .section-padding {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-.text-center-large {
-  text-align: center;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 700;
-}
-
-@media (min-width: 768px) {
-  .text-center-large {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-}
-
 /* Background Gradient Animation */
 
 @keyframes gradient-move {
@@ -743,34 +642,8 @@ a:hover {
   }
 
   50% {
-    border-color: black;
+    border-color: white;
   }
-}
-
-.typing-text {
-  width: 100%;
-  border-right: 2px solid;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-/* Fade-in Animation */
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fade-in 1s ease-out forwards;
 }
 
 /* Slide-up Animation */
@@ -787,97 +660,66 @@ a:hover {
   }
 }
 
-.animate-slide-up {
-  animation: slide-up 1s ease-out;
-}
-
 /* Profile Image Hover Effect */
-
-.profile-img {
-  transition: transform 0.5s ease;
-}
-
-.profile-img:hover {
-  transform: scale(1.05);
-}
 
 /* Glow Button Effect */
 
-.glow-btn {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
-}
+/* Button Styling */
 
-.glow-btn:hover {
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
-}
+/* Flex and grid adjustments for responsiveness */
 
-/* Animated Glow Button */
+/* Floating Animation for the Thank You Section */
 
-.glow-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  border-radius: 10px;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3), 0 0 45px rgba(255, 0, 255, 0.2);
-}
-
-.glow-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6), 0 0 55px rgba(255, 0, 255, 0.5);
-}
-
-/* Animated Background Gradient */
-
-.bg-animated {
-  background: linear-gradient(-45deg, #ff0066, #ffcc00, #00ffcc, #6600ff);
-  background-size: 400% 400%;
-  animation: gradientMove 8s ease infinite;
-}
-
-@keyframes gradientMove {
+@keyframes float {
   0% {
-    background-position: 0% 50%;
+    transform: translateY(0);
   }
 
   50% {
-    background-position: 100% 50%;
+    transform: translateY(-10px);
   }
 
   100% {
-    background-position: 0% 50%;
+    transform: translateY(0);
   }
 }
 
-/* Typing Animation */
-
-.typing-text {
-  border-right: 2px solid white;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  animation: typing 4s steps(22), blink 0.75s step-end infinite;
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
+/* Add Custom Cursor Effect */
 
-  to {
-    width: 100%;
-  }
+body {
+  cursor: url('/assets/cursor.png'), auto;
 }
 
-@keyframes blink {
-  from, to {
-    border-color: transparent;
+button:hover, a:hover {
+  cursor: url('/assets/cursor-hover.png'), pointer;
+}
+
+/* Social Media Icon Bounce */
+
+.social-icon:hover {
+  animation: bounce 0.3s ease-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
   }
 
   50% {
-    border-color: white;
+    transform: translateY(-5px);
   }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Subtle Text Shadows for Headings */
+
+h1, h2, h3, h4, p {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }

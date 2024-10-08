@@ -89,153 +89,127 @@
   .grid-responsive {
     @apply grid grid-cols-1 md:grid-cols-2 gap-4;
   }
-}
 
-.contact-btn {
-  @apply text-white font-bold py-3 px-5 rounded transition-all duration-300 ease-in-out;
-}
-
-.contact-btn-email {
-  @apply bg-green-500 hover:bg-green-600;
-}
-
-.contact-btn-linkedin {
-  @apply bg-blue-500 hover:bg-blue-600;
-}
-
-.contact-btn-instagram {
-  @apply bg-pink-500 hover:bg-pink-600;
-}
-.flex-responsive {
-  @apply flex flex-col md:flex-row md:space-x-4;
-}
-
-.grid-responsive {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
-}
-
-.section-padding {
-  @apply py-8 px-4 md:px-8;
-}
-
-.text-center-large {
-  @apply text-3xl md:text-4xl font-bold text-center;
-}
-/* Background Gradient Animation */
-@keyframes gradient-move {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Text Animation for typing effect */
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: black; }
-}
-
-.typing-text {
-  width: 100%;
-  border-right: 2px solid;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-/* Fade-in Animation */
-@keyframes fade-in {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-.animate-fade-in {
-  animation: fade-in 1s ease-out forwards;
-}
-
-/* Slide-up Animation */
-@keyframes slide-up {
-  from { opacity: 0; transform: translateY(50px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-slide-up {
-  animation: slide-up 1s ease-out;
-}
-
-/* Profile Image Hover Effect */
-.profile-img {
-  transition: transform 0.5s ease;
-}
-
-.profile-img:hover {
-  transform: scale(1.05);
-}
-
-/* Glow Button Effect */
-.glow-btn {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
-}
-
-.glow-btn:hover {
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
-}
-/* Animated Glow Button */
-.glow-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  border-radius: 10px;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3), 0 0 45px rgba(255, 0, 255, 0.2);
-}
-
-.glow-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6), 0 0 55px rgba(255, 0, 255, 0.5);
-}
-
-/* Animated Background Gradient */
-.bg-animated {
-  background: linear-gradient(-45deg, #ff0066, #ffcc00, #00ffcc, #6600ff);
-  background-size: 400% 400%;
-  animation: gradientMove 8s ease infinite;
-}
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
+  /* Background Gradient Animation */
+  @keyframes gradient-move {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
-  50% {
-    background-position: 100% 50%;
+
+  /* Text Animation for typing effect */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
   }
-  100% {
-    background-position: 0% 50%;
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+  }
+
+  .typing-text {
+    width: 100%;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+
+  /* Slide-up Animation */
+  @keyframes slide-up {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 1s ease-out;
+  }
+
+  /* Profile Image Hover Effect */
+  .profile-img {
+    transition: transform 0.5s ease;
+  }
+
+  .profile-img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Glow Button Effect */
+  .glow-btn {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+
+  .glow-btn:hover {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
+  }
+
+  /* Button Styling */
+  .contact-btn {
+    @apply text-white font-bold py-3 px-5 rounded transition-all duration-300 ease-in-out;
+  }
+
+  .contact-btn-email {
+    @apply bg-green-500 hover:bg-green-600;
+  }
+
+  .contact-btn-linkedin {
+    @apply bg-blue-500 hover:bg-blue-600;
+  }
+
+  .contact-btn-instagram {
+    @apply bg-pink-500 hover:bg-pink-600;
+  }
+
+  /* Flex and grid adjustments for responsiveness */
+  .flex-responsive {
+    @apply flex flex-col md:flex-row md:space-x-4;
+  }
+
+  .grid-responsive {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+  }
+
+  .section-padding {
+    @apply py-8 px-4 md:px-8;
+  }
+
+  .text-center-large {
+    @apply text-3xl md:text-4xl font-bold text-center;
   }
 }
-
-/* Typing Animation */
-.typing-text {
-  border-right: 2px solid white;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  animation: typing 4s steps(22), blink 0.75s step-end infinite;
+/* Floating Animation for the Thank You Section */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
 
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }
 
-@keyframes blink {
-  from, to { border-color: transparent; }
-  50% { border-color: white; }
+/* Add Custom Cursor Effect */
+body {
+  cursor: url('/assets/cursor.png'), auto;
+}
+
+button:hover, a:hover {
+  cursor: url('/assets/cursor-hover.png'), pointer;
+}
+
+/* Social Media Icon Bounce */
+.social-icon:hover {
+  animation: bounce 0.3s ease-out;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+/* Subtle Text Shadows for Headings */
+h1, h2, h3, h4, p {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
