@@ -1,61 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aimen Denche - Contact</title>
-  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="assets/output.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body class="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white transition duration-500">
+<body class="bg-gradient-to-r from-black via-gray-900 to-black text-gray-100 transition duration-500">
   <!-- Navbar -->
   <header class="w-full bg-gray-800 p-5 shadow-lg">
     <nav class="container mx-auto flex items-center justify-between">
       <a href="../index.html" class="text-3xl font-bold text-white">Aimen DENCHE</a>
       <ul class="flex space-x-6">
-        <li><a href="../index.html" class="text-white hover:text-gray-400">PORTFOLIO</a></li>
-        <li><a href="about_me.html" class="text-white hover:text-gray-400">ABOUT ME</a></li>
-        <li><a href="contact.html" class="text-white hover:text-gray-400">CONTACT</a></li>
+        <li><a href="../index.html" class="text-white hover:text-gray-300">PORTFOLIO</a></li>
+        <li><a href="about_me.html" class="text-white hover:text-gray-300">ABOUT ME</a></li>
+        <li><a href="contact.html" class="text-white hover:text-gray-300">CONTACT</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Contact Section -->
-  <main class="container mx-auto mt-12 p-5 text-center max-w-screen-lg">
-    <h1 class="text-5xl font-bold mb-8 typing-text">Let's Connect! 🤝</h1>
-    <p class="text-lg mb-8 max-w-lg mx-auto">Feel free to reach out to me through any of the platforms below. I'm always open for collaboration or a friendly chat!</p>
-
-    <!-- Contact Buttons with Spacing for Mobile Responsiveness -->
-    <div class="space-y-8">
-      <a href="mailto:denche@et.intechinfo.fr" class="contact-btn contact-btn-email glow-btn block mx-auto w-48 text-center">📧 Email Me</a>
-      <a href="https://www.linkedin.com/in/aimen-denche/" target="_blank" rel="noopener noreferrer" class="contact-btn contact-btn-linkedin glow-btn block mx-auto w-48 text-center">🔗 LinkedIn</a>
-      <a href="https://www.instagram.com/aimendenche/" target="_blank" rel="noopener noreferrer" class="contact-btn contact-btn-instagram glow-btn block mx-auto w-48 text-center">📸 Instagram</a>
+  <main class="container mx-auto mt-12 p-5 text-center">
+    <h1 class="text-5xl font-bold mb-8 typing-text animate-fade-in">Let's Connect! 🤝</h1>
+    <div class="flex justify-center space-x-6 mt-8 animate-slide-up">
+      <a href="mailto:denche@et.intechinfo.fr" class="contact-btn contact-btn-email glow-btn"><img src="assets/email-icon.png" class="w-8 h-8 inline" alt="Email Icon"> Email Me</a>
+      <a href="https://www.linkedin.com/in/aimen-denche/" target="_blank" class="contact-btn contact-btn-linkedin glow-btn"><img src="assets/linkedin-icon.png" class="w-8 h-8 inline" alt="LinkedIn Icon"> LinkedIn</a>
+      <a href="https://www.instagram.com/aimendenche/" target="_blank" class="contact-btn contact-btn-instagram glow-btn"><img src="assets/instagram-icon.png" class="w-8 h-8 inline" alt="Instagram Icon"> Instagram</a>
     </div>
-
-    <!-- New Section: Map for Location -->
-    <section class="mt-16">
-      <h2 class="text-3xl font-bold mb-8 typing-text">My Location</h2>
-      <iframe class="w-full h-96 rounded-lg shadow-xl" src="https://www.google.com/maps/embed?..."></iframe>
-    </section>
   </main>
 
+  <!-- Thank You Section -->
+  <section class="mt-16 text-center animate-slide-up">
+    <h2 class="text-4xl font-bold mb-4 text-yellow-300">Thank You for Your Visit! 🙏</h2>
+    <p class="text-lg mb-8">I appreciate you stopping by. Let’s stay connected!</p>
+    <div class="relative">
+      <div class="absolute w-full h-16 bg-gradient-to-r from-yellow-400 via-red-400 to-purple-600 rounded-full animate-float"></div>
+      <p class="text-sm text-gray-400 mt-2">Feel free to drop a message or just say hi anytime. ✉️</p>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer class="bg-gray-900 p-5 mt-12">
-    <div class="container mx-auto text-center text-gray-400">
+  <footer class="bg-gray-800 p-5 mt-12">
+    <div class="container mx-auto text-center text-white">
       <p>Aimen DENCHE - Paris, Île-de-France</p>
       <p>+33 6 19 78 57 89</p>
       <p>© 2024 Developed and Designed by Aimen Denche</p>
     </div>
   </footer>
 </body>
+
 </html>
-<!-- Thank You Section with Animation -->
-<section class="mt-16 text-center animate-slide-up">
-  <h2 class="text-4xl font-bold mb-4 text-yellow-300">Thank You for Your Visit! 🙏</h2>
-  <p class="text-lg mb-8">I appreciate you stopping by. Let’s stay connected!</p>
-  <div class="relative">
-    <div class="absolute w-full h-16 bg-gradient-to-r from-yellow-400 via-red-400 to-purple-600 rounded-full animate-float"></div>
-    <p class="text-sm text-gray-400 mt-2">Feel free to drop a message or just say hi anytime. ✉️</p>
-  </div>
-</section>

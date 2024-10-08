@@ -554,29 +554,9 @@ video {
   display: none;
 }
 
-/* Utility classes for responsive design and interactions */
+/* Basic Utility Classes */
 
-/* Adding keyframes for subtle animations */
-
-@keyframes wave {
-  0%, 60%, 100% {
-    transform: rotate(0deg);
-  }
-
-  10%, 30% {
-    transform: rotate(14deg);
-  }
-
-  20%, 40% {
-    transform: rotate(-8deg);
-  }
-
-  50% {
-    transform: rotate(10deg);
-  }
-}
-
-/* Adding animations for hover and fade-in effects */
+/* Fade-in Animation */
 
 @keyframes fade-in {
   0% {
@@ -590,41 +570,7 @@ video {
   }
 }
 
-/* Improving text styles for readability and style */
-
-/* Enhancing anchor hover effect */
-
-a:hover {
-  color: #00BFFF;
-  transition: color 0.3s ease, transform 0.3s ease;
-  transform: scale(1.05);
-}
-
-/* Beautifying button styles */
-
-/* Improving image hover with scaling and shadow */
-
-/* Making sure containers adjust for responsiveness */
-
-/* Flex and grid adjustments for responsiveness */
-
-/* Background Gradient Animation */
-
-@keyframes gradient-move {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Text Animation for typing effect */
+/* Typing Text Animation */
 
 @keyframes typing {
   from {
@@ -662,13 +608,11 @@ a:hover {
 
 /* Profile Image Hover Effect */
 
-/* Glow Button Effect */
+/* Button Glow Effect */
 
-/* Button Styling */
+/* Contact Button Styles */
 
-/* Flex and grid adjustments for responsiveness */
-
-/* Floating Animation for the Thank You Section */
+/* Custom Floating Animation for Airplane or Thank You Section */
 
 @keyframes float {
   0% {
@@ -684,25 +628,29 @@ a:hover {
   }
 }
 
-.animate-float {
-  animation: float 3s ease-in-out infinite;
+/* Text Shadows for Headings */
+
+h1, h2, h3, h4, p {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* Add Custom Cursor Effect */
+/* Gradient Background Animation */
 
-body {
-  cursor: url('/assets/cursor.png'), auto;
-}
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
 
-button:hover, a:hover {
-  cursor: url('/assets/cursor-hover.png'), pointer;
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Social Media Icon Bounce */
-
-.social-icon:hover {
-  animation: bounce 0.3s ease-out;
-}
 
 @keyframes bounce {
   0% {
@@ -718,8 +666,8 @@ button:hover, a:hover {
   }
 }
 
-/* Subtle Text Shadows for Headings */
+/* Enhancing responsiveness */
 
-h1, h2, h3, h4, p {
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-}
+/* Section padding */
+
+/* Center large text */

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
-  /* Utility classes for responsive design and interactions */
+  /* Basic Utility Classes */
   .tap-highlight-transparent {
     -webkit-tap-highlight-color: transparent;
   }
@@ -12,21 +12,7 @@
     backface-visibility: hidden;
   }
 
-  .animate-wave {
-    animation: wave 2.5s infinite;
-    transform-origin: 70% 70%;
-    display: inline-block;
-  }
-
-  /* Adding keyframes for subtle animations */
-  @keyframes wave {
-    0%, 60%, 100% { transform: rotate(0deg); }
-    10%, 30% { transform: rotate(14deg); }
-    20%, 40% { transform: rotate(-8deg); }
-    50% { transform: rotate(10deg); }
-  }
-
-  /* Adding animations for hover and fade-in effects */
+  /* Fade-in Animation */
   .animate-fade-in {
     animation: fade-in 1s ease-out forwards;
   }
@@ -36,68 +22,7 @@
     100% { opacity: 1; transform: translateY(0); }
   }
 
-  /* Improving text styles for readability and style */
-  .text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .font-bold {
-    font-weight: 700;
-  }
-
-  .font-nothingyoucoulddo {
-    font-family: 'Nothing You Could Do', cursive;
-  }
-
-  .font-signika {
-    font-family: 'Signika', sans-serif;
-  }
-
-  /* Enhancing anchor hover effect */
-  a:hover {
-    color: #00BFFF;
-    transition: color 0.3s ease, transform 0.3s ease;
-    transform: scale(1.05);
-  }
-
-  /* Beautifying button styles */
-  .btn {
-    @apply text-white bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded transition-all duration-300 ease-in-out;
-  }
-
-  /* Improving image hover with scaling and shadow */
-  .img-hover-scale {
-    transition: transform 0.5s ease, box-shadow 0.3s ease;
-  }
-
-  .img-hover-scale:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  }
-
-  /* Making sure containers adjust for responsiveness */
-  .responsive-container {
-    @apply w-full mx-auto p-4 md:p-8;
-  }
-
-  /* Flex and grid adjustments for responsiveness */
-  .flex-responsive {
-    @apply flex flex-col md:flex-row md:space-x-4;
-  }
-
-  .grid-responsive {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-4;
-  }
-
-  /* Background Gradient Animation */
-  @keyframes gradient-move {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  /* Text Animation for typing effect */
+  /* Typing Text Animation */
   @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
@@ -135,7 +60,7 @@
     transform: scale(1.05);
   }
 
-  /* Glow Button Effect */
+  /* Button Glow Effect */
   .glow-btn {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
   }
@@ -144,7 +69,7 @@
     box-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
   }
 
-  /* Button Styling */
+  /* Contact Button Styles */
   .contact-btn {
     @apply text-white font-bold py-3 px-5 rounded transition-all duration-300 ease-in-out;
   }
@@ -161,7 +86,47 @@
     @apply bg-pink-500 hover:bg-pink-600;
   }
 
-  /* Flex and grid adjustments for responsiveness */
+  /* Custom Floating Animation for Airplane or Thank You Section */
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Text Shadows for Headings */
+  h1, h2, h3, h4, p {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Gradient Background Animation */
+  @keyframes gradient-move {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .bg-gradient-to-r {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    background-size: 200% 200%;
+    animation: gradient-move 10s ease infinite;
+  }
+
+  /* Social Media Icon Bounce */
+  .social-icon:hover {
+    animation: bounce 0.3s ease-out;
+  }
+
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+
+  /* Enhancing responsiveness */
   .flex-responsive {
     @apply flex flex-col md:flex-row md:space-x-4;
   }
@@ -170,46 +135,17 @@
     @apply grid grid-cols-1 md:grid-cols-2 gap-4;
   }
 
+  .responsive-container {
+    @apply w-full mx-auto p-4 md:p-8;
+  }
+
+  /* Section padding */
   .section-padding {
     @apply py-8 px-4 md:px-8;
   }
 
+  /* Center large text */
   .text-center-large {
     @apply text-3xl md:text-4xl font-bold text-center;
   }
-}
-/* Floating Animation for the Thank You Section */
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
-
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}
-
-/* Add Custom Cursor Effect */
-body {
-  cursor: url('/assets/cursor.png'), auto;
-}
-
-button:hover, a:hover {
-  cursor: url('/assets/cursor-hover.png'), pointer;
-}
-
-/* Social Media Icon Bounce */
-.social-icon:hover {
-  animation: bounce 0.3s ease-out;
-}
-
-@keyframes bounce {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-  100% { transform: translateY(0); }
-}
-
-/* Subtle Text Shadows for Headings */
-h1, h2, h3, h4, p {
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
